@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .myImage {
+            width: 300px;
+        }
+
+        .myImage img {
+            width: 100%;
+        }
+
+        @media (max-width: 2000px) {
+            .myImage {
+                width: 500px;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            .container {
+                flex-direction: column;
+            }
+            .myImage {
+                width: 400px;
+                margin: 0 auto;
+            } 
+        }
+
+        @media (max-width: 1000px) {
+            .container {
+                flex-direction: column;
+            }
+            .myImage {
+                width: 700px;
+                margin: 0 auto;
+            } 
+        }
+
+        @media (max-width: 700px) {
+            .myImage {
+                width: 100%;
+            }
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="myImage">
+            <img src="Rashedul-Hasan.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, unde recusandae ipsam eos nihil minus
+                adipisci id laborum velit similique?</p>
+        </div>
+        <div class="myImage">
+            <img src="Rashedul-Hasan.png" alt="">
+            <p>Eum placeat accusantium perspiciatis nemo atque quae modi accusamus deleniti, saepe similique pariatur
+                consectetur dicta inventore eius molestiae? Ipsum, esse!</p>
+        </div>
+        <div class="myImage">
+            <img src="Rashedul-Hasan.png" alt="">
+            <p>Magni molestiae sit pariatur suscipit doloribus. Culpa, sed. Cumque consequatur sed saepe alias fuga
+                laborum illum accusamus, suscipit inventore neque.</p>
+        </div>
+        <div class="myImage">
+            <img src="Rashedul-Hasan.png" alt="">
+            <p>Architecto molestiae, nihil asperiores beatae odit, nisi magni ipsa in tenetur aliquid incidunt cum optio
+                accusantium est, rem modi laudantium.</p>
+        </div>
+        <div class="myImage">
+            <img src="Rashedul-Hasan.png" alt="">
+            <p>Atque sed quo quisquam repellat odio vitae nihil doloribus reprehenderit perferendis, incidunt,
+                blanditiis impedit ullam aliquid error ipsum tempore. Eveniet!</p>
+        </div>
+        <div class="myImage">
+            <img src="Rashedul-Hasan.png" alt="">
+            <p>Perspiciatis quibusdam tempora temporibus. Sed, cumque repellat ab et soluta architecto voluptatibus
+                blanditiis iure, officia expedita impedit, quae esse voluptatum.</p>
+        </div>
+    </section>
+</body>
+
+</html>
